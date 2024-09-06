@@ -2,8 +2,8 @@ import { Logo } from './Logo';
 
 export function Footer() {
 	return (
-		<footer className='flex flex-col justify-center items-center content-center gap-4'>
-			<Logo textSize='12' picHeight='24' />
+		<footer className='flex flex-col justify-center items-center content-center gap-2 p-4'>
+			<Logo textSize='xs' picHeight='24' gap='2' />
 			<div className='text-xs'>{new Date().getFullYear()}</div>
 		</footer>
 	);

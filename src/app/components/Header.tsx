@@ -3,9 +3,9 @@ import { Menu } from './Menu';
 
 export function Header() {
 	return (
-		<header className='py-20 flex flex-col items-center gap-4 relative'>
+		<header className='py-20 flex flex-col gap-4 relative'>
 			<Menu />
-			<Logo />
+			<Logo textSize='[32px]' gap='4' />
 		</header>
 	);
 }

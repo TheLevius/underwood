@@ -2,7 +2,7 @@ import { Button } from '../Button';
 
 export function CardFull() {
 	return (
-		<div className='flex flex-col rounded-lg overflow-hidden'>
+		<div className='flex flex-col rounded-lg overflow-hidden my-4'>
 			<div className='pb-[100%] bg-neutral-300'></div>
 			<div className='flex flex-col bg-neutral-500 p-4'>
 				<div className='text-xs uppercase'>{'сорт'}</div>
@@ -15,7 +15,7 @@ export function CardFull() {
 				<div className='text-xs uppercase mt-4'>{'наличие:'}</div>
 				<div className='text-lg uppercase'>{'В наличии'}</div>
 				<div className='text-xs uppercase mt-4'>{'цена BYN:'}</div>
-				<div className='text-2xl font-semibold'>{'99,99'}</div>
+				<div className='text-xl font-semibold'>{'99,99'}</div>
 				<Button name='Done' />
 			</div>
 		</div>

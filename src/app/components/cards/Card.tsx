@@ -9,7 +9,7 @@ export function Card({
 	availability = 'in stock',
 }: CardProps) {
 	return (
-		<div className='grid grid-cols-12 gap-x-4 bg-neutral-500 rounded-lg mb-2 overflow-hidden'>
+		<div className='grid grid-cols-12 gap-x-4 bg-neutral-500 rounded-lg mb-4 overflow-hidden'>
 			<div className='col-span-4 row-span-1 bg-neutral-600 '></div>
 			<div className='col-span-8 row-span-1 flex flex-col gap-2 py-4'>
 				<div className='text-lg font-semibold text-nowrap'>{name}</div>

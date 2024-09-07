@@ -11,9 +11,19 @@ export function Logo({
 	textSize = '4xl',
 	gap = '2',
 }: LogoProps) {
+	textSize = `text-${textSize}`;
+	textSize =
+		[
+			'text-xs',
+			'text-xl',
+			'text-2xl',
+			'text-[32px]',
+			'text-[28px]',
+			'text-[24px]',
+		].find((el) => el === textSize) || 'text-base';
 	return (
 		<div
-			className={`flex flex-col w-full align-center justify-center ${
+			className={`flex flex-col align-middle ${
 				gap === '2' ? 'gap-2' : gap === '4' ? 'gap-4' : 'gap-0'
 			}`}
 		>
@@ -31,17 +41,7 @@ export function Logo({
 					}}
 				/>
 			</svg>
-			<p
-				className={`${
-					textSize === 'xs'
-						? 'text-xs'
-						: textSize === '4xl'
-						? 'text-4xl'
-						: textSize === '[32px]'
-						? 'text-[32px]'
-						: 'text-base'
-				} text-center tracking-widest uppercase`}
-			>
+			<p className={`${textSize} text-center tracking-widest uppercase`}>
 				{name}
 			</p>
 		</div>
